@@ -21,3 +21,19 @@ A user can clone this from my repository, but they will need to install node in 
 ## Usage
 
 A video demonstration on how to use this project is provided below:
+
+## Credits
+
+No other collaborators for this project
+
+## Tests
+
+No testing for this application
+
+## Questions
+
+Contact me on
+
+- GitHub - https://github.com/KJ234/README.MD-generator.git
+
+* Email - komaljaved308@gmai.com
