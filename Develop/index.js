@@ -8,19 +8,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   {
     type: "input",
-    name: "github",
-    message: "What is your Project title?",
-    validate: (input) => {
-      if (input) {
-        return true;
-      } else {
-        console.log("Please enter a Project Title");
-        return false;
-      }
-    },
-  },
-  {
-    type: "input",
     name: "title",
     message: "What is your Project title?",
     validate: (input) => {
@@ -88,8 +75,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please provide testing information for this project",
     name: "tests",
+    message: "Please provide testing information for this project",
   },
   {
     // these inputs are added to the Questions section
@@ -125,10 +112,19 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(filename, data) {
+  fs.writeFile(filename, generateMarkdown(data), (err) =>
+    err ? console.error(err) : console.log("Success!")
+  );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then((answers) => {
+    console.log(answers);
+    writeToFile("README.md", answers);
+  });
+}
 
 // Function call to initialize app
 init();
