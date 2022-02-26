@@ -79,6 +79,11 @@ const questions = [
     message: "Please provide testing information for this project",
   },
   {
+    type: "input",
+    name: "contributors",
+    message: "What does the user need to know about contributing to the repo?",
+  },
+  {
     // these inputs are added to the Questions section
     type: "input",
     name: "github",
@@ -103,11 +108,6 @@ const questions = [
         return true;
       }
     },
-  },
-  {
-    type: "input",
-    name: "contributors",
-    message: "What does the user need to know about contributing to the repo?",
   },
 ];
 
