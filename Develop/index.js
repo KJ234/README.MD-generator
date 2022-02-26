@@ -62,7 +62,13 @@ const questions = [
     type: "list",
     name: "license",
     message: "What kind of license should your project have?",
-    choices: ["MIT", "GNU"],
+    choices: [
+      "MIT",
+      "GNU",
+      "Apache License 2.0",
+      "BSD 2-Clause Simplified License",
+      "Boost Software License 1.0",
+    ],
     default: ["MIT"],
     validate: (input) => {
       if (input) {
@@ -81,7 +87,7 @@ const questions = [
   {
     type: "input",
     name: "contributors",
-    message: "What does the user need to know about contributing to the repo?",
+    message: "Any contributers?",
   },
   {
     // these inputs are added to the Questions section
