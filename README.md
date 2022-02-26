@@ -42,4 +42,4 @@ Contact me on
 
 ## Licencse
 
-MIT
+<img src=https://img.shields.io/badge/License-MIT-yellow.svg>
