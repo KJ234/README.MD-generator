@@ -37,3 +37,7 @@ Contact me on
 - GitHub - https://github.com/KJ234/README.MD-generator.git
 
 * Email - komaljaved308@gmai.com
+
+## Licencse
+
+MIT
