@@ -22,6 +22,8 @@ A user can clone this from my repository, but they will need to install node in 
 
 A video demonstration on how to use this project is provided below:
 
+https://user-images.githubusercontent.com/95283510/155857349-e63a09da-4ecd-4570-ac4a-d46aea17a7dd.mp4
+
 ## Credits
 
 No other collaborators for this project
