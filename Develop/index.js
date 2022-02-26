@@ -88,6 +88,37 @@ const questions = [
   },
   {
     type: "input",
+    message: "Please provide testing information for this project",
+    name: "tests",
+  },
+  {
+    // these inputs are added to the Questions section
+    type: "input",
+    name: "github",
+    message: "Please provide your Github username",
+    validate: (input) => {
+      if (!input) {
+        return "Please provide a username";
+      } else {
+        return true;
+      }
+    },
+  },
+
+  {
+    type: "input",
+    name: "email",
+    message: "Please provide your email address",
+    validate: (input) => {
+      if (!input) {
+        return "Please provide an email address";
+      } else {
+        return true;
+      }
+    },
+  },
+  {
+    type: "input",
     name: "contributors",
     message: "What does the user need to know about contributing to the repo?",
   },
